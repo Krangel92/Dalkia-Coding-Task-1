@@ -1,4 +1,4 @@
-function daysUntilChristmas() {
+function calculateDaysUntilChristmas() {
 	var p = new Date();
 	var q = new Date("2024-12-25");
 
@@ -8,7 +8,7 @@ function daysUntilChristmas() {
 	variable2.innerText = variable;
 }
 
-function daysUntilNewYear() {
+function calculateDaysUntilNewYear() {
 	var p = new Date();
 	var q = new Date("2025-01-01");
 
@@ -18,5 +18,5 @@ function daysUntilNewYear() {
 	variable2.innerText = variable;
 }
 
-daysUntilChristmas();
-daysUntilNewYear();
+calculateDaysUntilChristmas();
+calculateDaysUntilNewYear();
