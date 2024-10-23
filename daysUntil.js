@@ -6,8 +6,8 @@ const calculateDaysUntilChristmas = () => {
 		(christmasDate - todaysDate) / (1000 * 60 * 60 * 24)
 	);
 
-	let variable2 = document.getElementById("my-element");
-	variable2.innerText = calculationResult;
+	let daysLeftDisplay = document.getElementById("my-element");
+	daysLeftDisplay.innerText = calculationResult;
 };
 
 const calculateDaysUntilNewYear = () => {
@@ -18,8 +18,8 @@ const calculateDaysUntilNewYear = () => {
 		(newYearsdate - todaysDate) / (1000 * 60 * 60 * 24)
 	);
 
-	let variable2 = document.getElementById("my-element2");
-	variable2.innerText = calculationResult;
+	let daysLeftDisplay = document.getElementById("my-element2");
+	daysLeftDisplay.innerText = calculationResult;
 };
 
 calculateDaysUntilChristmas();
