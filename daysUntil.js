@@ -22,5 +22,18 @@ const calculateDaysUntilNewYear = () => {
 	daysLeftDisplay.innerText = calculationResult;
 };
 
+const calculateDaysUntilValentines = () => {
+	let todaysDate = new Date();
+	let valentinesDate = new Date("2025-02-14");
+
+	let calculationResult = Math.round(
+		(valentinesDate - todaysDate) / (1000 * 60 * 60 * 24)
+	);
+
+	let daysLeftDisplay = document.getElementById("my-element3");
+	daysLeftDisplay.innerText = calculationResult;
+};
+
 calculateDaysUntilChristmas();
 calculateDaysUntilNewYear();
+calculateDaysUntilValentines();
