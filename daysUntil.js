@@ -24,7 +24,13 @@ const calculateDaysUntilNewYear = () => {
 
 const calculateDaysUntilValentines = () => {
 	let todaysDate = new Date();
-	let valentinesDate = new Date("2025-02-14");
+	let currentYear = todaysDate.getFullYear();
+
+	let valentinesDate = new Date(currentYear, 1, 14);
+
+	if (todaysDate > valentinesDate) {
+		valentinesDate = new Date(currentYear + 1, 1, 14);
+	}
 
 	let calculationResult = Math.round(
 		(valentinesDate - todaysDate) / (1000 * 60 * 60 * 24)
