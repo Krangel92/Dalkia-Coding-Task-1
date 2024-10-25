@@ -1,7 +1,6 @@
 const calculateDaysUntilChristmas = () => {
 	let todaysDate = new Date();
 	let currentYear = todaysDate.getFullYear();
-
 	let christmasDate = new Date(currentYear, 11, 25);
 
 	if (todaysDate > christmasDate) {
@@ -18,7 +17,12 @@ const calculateDaysUntilChristmas = () => {
 
 const calculateDaysUntilNewYear = () => {
 	let todaysDate = new Date();
-	let newYearsdate = new Date("2025-01-01");
+	let currentYear = todaysDate.getFullYear();
+	let newYearsdate = new Date(currentYear, 0, 1);
+
+	if (todaysDate > newYearsdate) {
+		newYearsdate = new Date(currentYear + 1, 0, 1);
+	}
 
 	let calculationResult = Math.round(
 		(newYearsdate - todaysDate) / (1000 * 60 * 60 * 24)
@@ -31,7 +35,6 @@ const calculateDaysUntilNewYear = () => {
 const calculateDaysUntilValentines = () => {
 	let todaysDate = new Date();
 	let currentYear = todaysDate.getFullYear();
-
 	let valentinesDate = new Date(currentYear, 1, 14);
 
 	if (todaysDate > valentinesDate) {
