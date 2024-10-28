@@ -1,3 +1,9 @@
 * {
 	background-color: beige;
 }
+
+.my-elements-class {
+	font-family: arial;
+	color: blue;
+	padding: 20px;
+}
